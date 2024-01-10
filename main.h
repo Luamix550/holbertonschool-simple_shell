@@ -4,6 +4,7 @@
 
 /*LIBRARIES*/
 
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -14,5 +15,6 @@
 
 int createProcess(char *userCommand);
 void execute(char *userCommand);
+char** tokenization(const char* inputstr, int* cantidadPalabras);
 
 #endif/*MAIN_H*/
