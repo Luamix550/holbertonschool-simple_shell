@@ -1,6 +1,6 @@
 #include "main.h"
 
-int main() {
+int main(void) {
     char *in_line = NULL;
     size_t size = 0;
 
@@ -20,16 +20,12 @@ int main() {
         char **words = tokenization(in_line, &count_words);
 
         for (int i = 0; i < count_words; ++i) {
-            printf("Token %d: %s\n", i + 1, words[i]);
-        }
-
-        for (int i = 0; i < count_words; ++i) {
             free(words[i]);
         }
         free(words);
 
         if (createProcess(in_line) == -1) {
-            printf("The command not found\n");
+            printf("Command not found\n");
         }
     }
 
