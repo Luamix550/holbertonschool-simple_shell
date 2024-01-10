@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Simple Shell Project</title>
-</head>
 
 <body>
 
 <h1>Simple Shell</h1>
 
 <p>This project involves creating a simple UNIX command interpreter, commonly known as a shell. The shell is designed to read commands entered by the user, execute them, and display the results. The goal is to replicate some of the basic functionalities of the traditional shell (/bin/sh) and gain insights into the inner workings of a command-line interpreter.</p>
+
+<h1>Flowchart Simple Shell</h1>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/7TveCcv" data-context="false" ><a href="//imgur.com/a/7TveCcv"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 <h2>Table of Contents</h2>
 
