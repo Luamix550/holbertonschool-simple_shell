@@ -37,27 +37,8 @@
     <li><code>process.c:</code> Funciones para la creación y ejecución de procesos.</li>
 </ul>
 
-<h2>Contribuir</h2>
+<h2>Authors</h2>
 
-<p>Si deseas contribuir a este proyecto, sigue estos pasos:</p>
-
-<ol>
-    <li>Haz un fork del repositorio.</li>
-    <li>Crea una nueva rama para tus cambios: <code>git checkout -b feature/nueva-caracteristica</code>.</li>
-    <li>Realiza tus cambios y haz commit: <code>git commit -m "Añadir nueva característica"</code>.</li>
-    <li>Haz push de tus cambios: <code>git push origin feature/nueva-caracteristica</code>.</li>
-    <li>Crea un pull request en GitHub.</li>
-</ol>
-
-<h2>Problemas conocidos</h2>
-
-<ul>
-    <li>No se manejan redirecciones ni tuberías en este momento.</li>
-    <li>Puede haber problemas con ciertos comandos avanzados.</li>
-</ul>
-
-<h2>Contacto</h2>
-
-<p>Para cualquier problema o sugerencia, por favor contacta a [Tu Nombre] a través de [tu.email@example.com].</p>
+<p> Vanessa requejo porras <vnporras1028@gmail.com> Luis Alfonso Diaz Herrera <luizalfonso611@gmail.com> </p>
 
 <p>¡Gracias por usar Simple Shell!</p>
