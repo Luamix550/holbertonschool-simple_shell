@@ -1,7 +1,8 @@
 #include "main.h"
 #define MAX_WORDS 100
 
-char** tokenization(const char* input_str, int* count_words) {
+char** tokenization(const char* input_str, int* count_words)
+{
     if (input_str == NULL) {
         *count_words = 0;
         return NULL;

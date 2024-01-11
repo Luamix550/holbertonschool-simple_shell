@@ -1,11 +1,12 @@
 #include "main.h"
 
 
-void execute(char *userCommand)
+void execute(char *userCommand, char *args[])
 {
-	//char *args[] = {userCommand, "-l", "/tmp", NULL};
-	char *args[] = {userCommand, NULL};
-	execv(args[0],args);
-	perror("Error");
-	exit(EXIT_FAILURE);
+{
+    char *args[] = {userCommand, NULL};
+    execv(args[0], args);
+    perror("Error");
+    exit(EXIT_FAILURE);
+}
 }

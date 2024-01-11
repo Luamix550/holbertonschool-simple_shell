@@ -13,8 +13,8 @@
 
 /*FUNCTIONS*/
 
-int createProcess(char *userCommand);
-void execute(char *userCommand);
+int createProcess(char *userCommand, char *args[]);
+void execute(char *userCommand, char *args[]);
 char** tokenization(const char* inputstr, int* cantidadPalabras);
 
 #endif/*MAIN_H*/

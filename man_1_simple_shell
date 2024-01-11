@@ -20,7 +20,7 @@ COMMANDS
        exit     Exit the shell.
 
        <command> [arguments]
-                Execute the specified command with optional arguments.
+       Execute the specified command with optional arguments.
 
 TOKENIZATION
 
