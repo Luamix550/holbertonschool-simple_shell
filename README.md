@@ -5,11 +5,12 @@
 <body>
 
 <h1>Simple Shell</h1>
+<a href="https://imgur.com/9ZJamsi"><img src="https://i.imgur.com/9ZJamsi.png" title="Banner project " /></a>
 
 <p>This project involves creating a simple UNIX command interpreter, commonly known as a shell. The shell is designed to read commands entered by the user, execute them, and display the results. The goal is to replicate some of the basic functionalities of the traditional shell (/bin/sh) and gain insights into the inner workings of a command-line interpreter.</p>
 
-<h1>Flowchart Simple Shell</h1>
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/7TveCcv" data-context="false" ><a href="//imgur.com/a/7TveCcv"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<h2>Flowchart Simple Shell</h2>
+<a href="https://imgur.com/a/7TveCcv"><img src="https://i.imgur.com/y9LsXxP.jpg" title="Flowchart readme" /></a>
 
 <h2>Table of Contents</h2>
 
