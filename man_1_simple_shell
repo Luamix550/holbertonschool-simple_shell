@@ -1,4 +1,4 @@
-SIMPLE_SHELL(1)                          User Commands                         SIMPLE_SHELL(1)
+SIMPLE_SHELL
 
 NAME
        simple_shell - A simple command-line shell.
@@ -20,7 +20,7 @@ COMMANDS
        exit     Exit the shell.
 
        <command> [arguments]
-                Execute the specified command with optional arguments.
+       Execute the specified command with optional arguments.
 
 TOKENIZATION
        Simple_Shell supports tokenization of commands, separating them into individual words.
