@@ -1,4 +1,4 @@
-SIMPLE_SHELL
+SIMPLE_SHELL(1)
 
 NAME
        simple_shell - A simple command-line shell.
@@ -23,6 +23,7 @@ COMMANDS
        Execute the specified command with optional arguments.
 
 TOKENIZATION
+
        Simple_Shell supports tokenization of commands, separating them into individual words.
        The tokenization is performed using spaces as delimiters.
 
@@ -46,4 +47,6 @@ BUGS
        Report any bugs or issues to <vnporras1028@gmail.com> and <luizalfonso611@hotmail.com>.
 
 AUTHOR
-       Simple_Shell was developed by Vanessa Requejo Porras <vnporras1028@gmail.com> and Luis alfonso diaz herrerra <luizalfonso611@hotmail.com>.
+       Simple_Shell was developed by 
+       Vanessa Requejo Porras <vnporras1028@gmail.com>
+       Luis alfonso diaz herrerra <luizalfonso611@hotmail.com>.
