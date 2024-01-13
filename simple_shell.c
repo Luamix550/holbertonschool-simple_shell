@@ -1,26 +1,12 @@
 #include "main.h"
 
+/**
+* main - Function that start the shell.
+* Return: return 0 if the code is successful.
+*/
 
-int createProcess(char *userCommand)
+int main(void)
 {
-	int i;
-	pid_t pid_child;
-	int status;
-	
-	if(access(userCommand, F_OK)== -1)
-	{
-		return(-1);
-	}
-	pid_child = fork();
-	if(pid_child == -1)
-	{
-		perror("Error");
-		exit(EXIT_FAILURE);
-	}
-	if(pid_child == 0)
-	{
-		execute(userCommand);
-	}
-	int pid = wait(&status);
-	return(0);
+	runShell();
+	return (0);
 }
