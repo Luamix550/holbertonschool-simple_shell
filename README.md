@@ -4,7 +4,7 @@
 
 <body>
 
-<h1>Simple Shell</h1>
+<h1>Simple Shell.</h1>
 <a href="https://imgur.com/9ZJamsi"><img src="https://i.imgur.com/9ZJamsi.png" title="Banner project " /></a>
 
 <p>This project involves creating a simple UNIX command interpreter, commonly known as a shell. The shell is designed to read commands entered by the user, execute them, and display the results. The goal is to replicate some of the basic functionalities of the traditional shell (/bin/sh) and gain insights into the inner workings of a command-line interpreter.</p>
