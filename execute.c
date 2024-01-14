@@ -7,7 +7,9 @@
 
 void execute(char *userCommand)
 {
-	char *args[] = {userCommand, NULL};
+	char *args[2];
+	args[0] = userCommand;
+	args[1] = NULL;
 
 	execv(args[0], args);
 	perror("Error");

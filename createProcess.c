@@ -7,8 +7,6 @@
 
 int createProcess(char *userCommand)
 {
-	int status;
-
 	handleExitCommand(userCommand);
 	executeDirectory(userCommand);
 	executePath(userCommand, getenv("PATH"));

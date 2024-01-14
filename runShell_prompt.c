@@ -7,11 +7,12 @@ void runShell(void)
 {
 	char *in_line = NULL;
 	size_t size = 0;
+	ssize_t read;
 
 	while (1)
 	{
 		printf("Simple_Shell$ ");
-		ssize_t read = getline(&in_line, &size, stdin);
+		read = getline(&in_line, &size, stdin);
 
 		if (read == -1)
 		{
