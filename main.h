@@ -13,10 +13,10 @@
 
 /*FUNCTIONS*/
 
-int createProcess(char *userCommand);
-void execute(char *userCommand);
+void executeCommand(char *command);
 void executePath(char *userCommand, char *directory);
 void executeDirectory(char *userCommand);
 void handleExitCommand(char *userCommand);
 void runShell(void);
+
 #endif/*MAIN_H*/

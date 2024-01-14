@@ -13,7 +13,6 @@ void executeDirectory(char *userCommand)
 		if (execlp(userCommand, userCommand, (char *)NULL) == -1)
 		{
 			perror("Error");
-			exit(EXIT_FAILURE);
 		}
 	}
 }
