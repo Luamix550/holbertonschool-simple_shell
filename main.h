@@ -21,4 +21,5 @@ void executePath(char *userCommand, char *directory);
 void executeDirectory(char *userCommand);
 void handleExitCommand(char *userCommand);
 int main(void);
+
 #endif/*MAIN_H*/
