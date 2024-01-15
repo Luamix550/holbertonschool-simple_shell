@@ -8,8 +8,13 @@ void executeCommand(char *usercommand)
 	char *args[1024];
 	int argCount = 0;
 	pid_t pid;
+	char *token;
 
-	char *token = strtok(usercommand, " ");
+	if (strcmp(usercommand, "exit") == 0)
+	{
+        exit(EXIT_SUCCESS);
+    }
+	token = strtok(usercommand, " ");
 
 	while (token != NULL && argCount < 1023)
 	{
