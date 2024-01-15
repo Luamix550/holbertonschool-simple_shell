@@ -21,7 +21,6 @@ void execute(char *userCommand)
 	{
 		args[argCount++] = token;
 		token = strtok(NULL, " ");
-		free(token);
 	}
 	args[argCount] = NULL;
 	pid = fork();
