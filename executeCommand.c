@@ -12,8 +12,8 @@ void executeCommand(char *usercommand)
 
 	if (strcmp(usercommand, "exit") == 0)
 	{
-        exit(EXIT_SUCCESS);
-    }
+		exit(EXIT_SUCCESS);
+	}
 	token = strtok(usercommand, " ");
 
 	while (token != NULL && argCount < 1023)
