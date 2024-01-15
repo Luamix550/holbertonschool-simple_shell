@@ -1,0 +1,55 @@
+SIMPLE_SHELL                User Commands                SIMPLE_SHELL(1)
+
+NAME
+       simple_shell - a simple UNIX command line interpreter
+
+SYNOPSIS
+       simple_shell
+
+DESCRIPTION
+       simple_shell is a basic UNIX command line interpreter designed for
+       simple command executions. It supports interactive and non-interactive
+       modes, providing users with a minimal set of features.
+
+OPTIONS
+       None.
+
+INTERACTIVE MODE
+       When executed without any arguments, simple_shell enters interactive
+       mode. In this mode, it displays a prompt (``$'') and waits for the user
+       to input commands.
+
+       Example:
+           $ ./simple_shell
+           ($) ls
+           file1.txt file2.txt
+           ($) exit
+
+NON-INTERACTIVE MODE
+       simple_shell can also be used in non-interactive mode by passing
+       commands through pipes or redirections.
+
+       Example:
+           $ echo "ls" | ./simple_shell
+
+SUPPORTED COMMANDS
+       simple_shell supports simple command lines with arguments. It does not
+       handle advanced features like semicolons, pipes, or redirections.
+
+BUILT-IN COMMANDS
+       The following built-in commands are available:
+
+       exit: Exits the shell.
+       env: Prints the current environment.
+
+EXIT STATUS
+       The simple_shell command returns the following exit status:
+
+       0: Successful execution.
+       1: An error occurred.
+
+AUTHOR
+       Created by [Vanessa requejo porras] [Luis alfonso diaz herrera]
+
+REPORTING BUGS
+       Report any bugs to [vnporra1028@gmail.com] [luizalfonso611@gmail.com]
