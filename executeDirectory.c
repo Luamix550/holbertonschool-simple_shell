@@ -5,7 +5,6 @@
 * @userCommand: It is a pointer where the user enters commands.
 */
 
-
 void executeDirectory(char *userCommand)
 {
 	if (access(userCommand, X_OK) == 0)
@@ -13,7 +12,6 @@ void executeDirectory(char *userCommand)
 		if (execlp(userCommand, userCommand, (char *)NULL) == -1)
 		{
 			perror("Error");
-			exit(EXIT_FAILURE);
 		}
 	}
 }
