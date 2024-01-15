@@ -20,5 +20,5 @@ void execute(char *userCommand);
 void executePath(char *userCommand, char *directory);
 void executeDirectory(char *userCommand);
 void handleExitCommand(char *userCommand);
-void runShell(void);
+int main(void);
 #endif/*MAIN_H*/

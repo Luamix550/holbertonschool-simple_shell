@@ -1,9 +1,10 @@
 #include "main.h"
 /**
-* runShell - function that generates interactivity with the user.
+* main - function that generates interactivity with the user.
+* Return: 0 successful
 */
 
-void runShell(void)
+int main(void)
 {
 	char *in_line = NULL;
 	size_t size = 0;
@@ -26,4 +27,5 @@ void runShell(void)
 		execute(in_line);
 	}
 	free(in_line);
+	return (0);
 }
