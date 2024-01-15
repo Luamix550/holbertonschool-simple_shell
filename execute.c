@@ -7,6 +7,7 @@
 
 void execute(char *userCommand)
 {
+	int i;
 	int argCount = 0;
 	char *token;
 	pid_t pid;
@@ -19,7 +20,7 @@ void execute(char *userCommand)
 	token = strtok(userCommand, " ");
 	while (token != NULL && argCount < 1023)
 	{
-		args[argCount++] = token;
+		args[argCount++] = strdup(token);
 		token = strtok(NULL, " ");
 	}
 	args[argCount] = NULL;
@@ -38,5 +39,9 @@ void execute(char *userCommand)
 	{
 		int status;
 		waitpid(pid, &status, 0);
+	}
+	for (i = 0; i < argCount; i++)
+	{
+        free(args[i]);
 	}
 }

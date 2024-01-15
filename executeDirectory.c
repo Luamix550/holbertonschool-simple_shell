@@ -12,6 +12,7 @@ void executeDirectory(char *userCommand)
 	{
 		if (execlp(userCommand, userCommand, (char *)NULL) == -1)
 		{
+			exit(EXIT_FAILURE);
 		}
 	}
 }
