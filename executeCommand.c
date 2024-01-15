@@ -5,36 +5,33 @@
 */
 void executeCommand(char *usercommand)
 {
+	char *args[1024];
+	int argCount = 0;
 
-    char *args[1024];
-    int argCount = 0;
+	char *token = strtok(usercommand, " ");
 
-    char *token = strtok(usercommand, " ");
-    while (token != NULL && argCount < 1023)
-    {
-        args[argCount++] = token;
-        token = strtok(NULL, " ");
-    }
+	while (token != NULL && argCount < 1023)
+	{
+	args[argCount++] = token;
+	token = strtok(NULL, " ");
+	}
+	args[argCount] = NULL;
+	pid_t pid = fork();
 
-    args[argCount] = NULL;
-
-    pid_t pid = fork();
-
-    if (pid == -1)
-    {
-        perror("Fork failed");
-        exit(EXIT_FAILURE);
-    }
-
-    if (pid == 0)
-    {
-        execvp(args[0], args);
-        perror("Error executing command");
-        exit(EXIT_FAILURE);
-    }
-    else
-    {
-        int status;
-        waitpid(pid, &status, 0);
-    }
+	if (pid == -1)
+	{
+		perror("Fork failed");
+		exit(EXIT_FAILURE);
+	}
+	if (pid == 0)
+	{
+		execvp(args[0], args);
+		perror("Error executing command");
+		exit(EXIT_FAILURE);
+	}
+	else
+	{
+		int status;
+			waitpid(pid, &status, 0);
+	}
 }
