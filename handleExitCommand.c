@@ -9,7 +9,6 @@ void handleExitCommand(char *userCommand)
 {
 	if (strcmp(userCommand, "exit") == 0)
 	{
-		printf("Coming out of shell....\n");
 		exit(EXIT_SUCCESS);
 	}
 }

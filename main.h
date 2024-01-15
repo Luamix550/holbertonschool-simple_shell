@@ -1,6 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/*MACRO*/
+
+#define MAX_ARGS 100
 
 /*LIBRARIES*/
 
@@ -13,7 +16,6 @@
 
 /*FUNCTIONS*/
 
-int createProcess(char *userCommand);
 void execute(char *userCommand);
 void executePath(char *userCommand, char *directory);
 void executeDirectory(char *userCommand);

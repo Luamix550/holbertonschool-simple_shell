@@ -16,7 +16,6 @@ void executePath(char *userCommand, char *directory)
 	{
 		if (execlp(commandPath, userCommand, (char *)NULL) == -1)
 		{
-			perror("Error\n");
 			exit(EXIT_FAILURE);
 		}
 	}
