@@ -7,6 +7,7 @@ void executeCommand(char *usercommand)
 {
 	char *args[1024];
 	int argCount = 0;
+	pid_t pid;
 
 	char *token = strtok(usercommand, " ");
 
@@ -16,7 +17,7 @@ void executeCommand(char *usercommand)
 	token = strtok(NULL, " ");
 	}
 	args[argCount] = NULL;
-	pid_t pid = fork();
+	pid = fork();
 
 	if (pid == -1)
 	{
